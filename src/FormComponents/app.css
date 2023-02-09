@@ -94,6 +94,6 @@ input:invalid[focused="true"] ~ span{
 
 @media(max-width:370px){
     .formInput{
-            width: 230px;
+            width: 260px;
     }
 }
