@@ -41,13 +41,13 @@ setIsSubmit(true)
 {Object.keys(FormError).length === 0 && isSubmit?(<FormTrue/>):(<form onSubmit={handleSubmit}>  <div className='formInput'>
     <h1>Register</h1>
         <label>Name</label>
-        <input onChange={onchange} name='name' value={formValue.name} type="text" placeholder='Enter Name Here' />
+        <input onChange={onchange} name='name' autoComplete='off' value={formValue.name} type="text" placeholder='Enter Name Here' />
         <p className='error'>{FormError.name}</p>
         <label>Email</label>
-        <input onChange={onchange} name='email' value={formValue.email} placeholder='Enter Email Here' />
+        <input onChange={onchange} name='email' autoComplete='off' value={formValue.email} placeholder='Enter Email Here' />
         <p className='error'>{FormError.email}</p>
         <label>Password</label>
-        <input onChange={onchange} name='password' value={formValue.password} type="password" placeholder='Enter Password Here' />
+        <input onChange={onchange} name='password' autoComplete='off' value={formValue.password} type="password" placeholder='Enter Password Here' />
         <p className='error'>{FormError.password}</p>
 
     </div>
@@ -60,3 +60,6 @@ setIsSubmit(true)
 }
 
 export default AppForm
+// git add .
+// git commit -m "first commit"
+// git push 
